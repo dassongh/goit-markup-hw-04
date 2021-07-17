@@ -118,6 +118,7 @@ img {
 .hero {
   color: var(--additional-text-color);
   background-color: #2f303a;
+  background-image: url(../images/bg.jpg);
 
   text-align: center;
 }
@@ -144,6 +145,7 @@ img {
 
   background-color: var(--accent);
   color: var(--additional-text-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
   font-family: Roboto, sans-serif;
   font-weight: 700;
@@ -172,7 +174,6 @@ img {
 
 .features .item {
   width: 270px;
-  height: 101px;
 }
 
 .features .item:not(:last-child) {
@@ -193,6 +194,29 @@ img {
 
 .features p {
   margin: 0;
+}
+
+.features .item::before {
+  content: '';
+  display: block;
+  height: 120px;
+  margin-bottom: 30px;
+}
+
+.features .item:nth-child(1)::before {
+  background-image: url(../images/svg1.svg);
+}
+
+.features .item:nth-child(2)::before {
+  background-image: url(../images/svg2.svg);
+}
+
+.features .item:nth-child(3)::before {
+  background-image: url(../images/svg3.svg);
+}
+
+.features .item:nth-child(4)::before {
+  background-image: url(../images/svg4.svg);
 }
 
 /* Направление */
