@@ -304,7 +304,7 @@ img {
   padding-bottom: 30px;
 }
 
-.team .thumb {
+.team .link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -313,17 +313,52 @@ img {
   border-radius: 50%;
 }
 
-.team .thumb:hover {
+.team .link:hover {
   color: #ffffff;
   background-color: var(--accent);
 }
 
-.team .link {
-  border-radius: 50%;
-}
-
 .team .icon {
   fill: currentColor;
+}
+
+/* Наши клиенты */
+
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients .title {
+  margin-bottom: 50px;
+  margin-top: 0;
+}
+
+.clients .cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clients .card-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.clients .icon {
+  fill: currentColor;
+}
+
+.clients .card-item:hover {
+  border: 1px solid var(--accent);
+}
+
+.clients .link {
+  padding: 20px 65px;
 }
 
 /* footer */
