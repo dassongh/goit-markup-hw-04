@@ -311,6 +311,8 @@ img {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+
+  color: #afb1b8;
 }
 
 .team .link:hover {
@@ -318,7 +320,7 @@ img {
   background-color: var(--accent);
 }
 
-.team .icon {
+.icon {
   fill: currentColor;
 }
 
@@ -339,7 +341,16 @@ img {
   justify-content: space-between;
 }
 
-.clients .card-item {
+.clients .icon {
+  fill: currentColor;
+}
+
+.clients .link:hover {
+  color: var(--accent);
+  border: 1px solid var(--accent);
+}
+
+.clients .link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -347,18 +358,7 @@ img {
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-}
-
-.clients .icon {
-  fill: currentColor;
-}
-
-.clients .card-item:hover {
-  border: 1px solid var(--accent);
-}
-
-.clients .link {
-  padding: 20px 65px;
+  color: #afb1b8;
 }
 
 /* footer */
@@ -406,6 +406,49 @@ img {
 
 .footer .link:first-child {
   margin-bottom: 9px;
+}
+
+.footer .container {
+  display: flex;
+}
+
+.footer .column:first-child {
+  margin-right: 70px;
+}
+
+.footer .column:last-child {
+  margin-top: 12px;
+}
+
+.footer .heading {
+  margin-bottom: 20px;
+
+  color: var(--additional-text-color);
+}
+
+.footer .social-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+
+  color: var(--additional-text-color);
+  background-color: #44454e;
+  border-radius: 50%;
+}
+
+.footer .social-links > li:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer .social-link:hover {
+  background-color: var(--accent);
 }
 
 /* portfolio */
